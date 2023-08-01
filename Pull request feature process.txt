@@ -1,0 +1,88 @@
+Sure! Below are the detailed steps for the Pull Request feature on GitHub. I've included decision points in the descriptions to help with creating a flowchart:
+
+1. **Create a Fork**:
+   - Decision Point: The user decides to contribute to a project hosted on GitHub and needs to make changes to the project's code.
+     Decision Point: If the user doesn't have permission to fork the repository (due to restrictions set by the repository owner), they won't be able 
+    to proceed with the next steps. In this case, the user can request access or contact the repository owner for permission.
+    Alternate Flow: If the user chooses not to contribute, they do not create a fork and do not proceed with the following steps.
+
+   - The user starts by creating a fork of the original repository. A fork is a copy of the project hosted on the user's GitHub account.
+
+2. **Clone the Fork Locally**:
+   - Decision Point: The user wants to make changes to the code locally and needs to have a local copy of the repository.
+     Decision Point: If the user chooses not to clone the fork locally, they won't have a local copy of the repository to work on. Instead, they may 
+     make changes directly on the GitHub web interface, which is less efficient for larger contributions.
+Alternate Flow: If the user chooses not to work locally, they skip this step and work directly on the GitHub repository.
+
+   - The user clones the forked repository to their local machine using a version control system like Git.
+
+3. **Create a New Branch**:
+   - Decision Point: The user decides to work on a specific feature, bug fix, or improvement and wants to keep it separate from the main codebase.
+     Decision Point: Users have the option to create a new branch when they create a pull request. Alternatively, they can choose an existing branch from their 
+     fork to open a pull request. This allows them to decide whether they want to work on new features or improvements or make changes directly to an existing branch.
+Alternate Flow: If the user chooses not to create a new branch, they make the changes directly in the default branch (e.g., 'master' or 'main').
+
+   - The user creates a new branch in their local repository to work on the changes. This helps to isolate the changes from the main branch (usually named 'master' or 'main').
+
+4. **Make Changes**:
+   - The user makes the desired code changes in the new branch, implementing the feature or fixing the issue.
+
+5. **Commit Changes**:
+   - The user decides to commit the changes they made in the branch to save their progress.
+
+6. **Push the Branch**:
+   - Decision Point: The user wants to share their changes with others and make a pull request.
+     Decision Point: If the user chooses not to push the branch containing their changes to the forked repository, they won't be able to create a pull request with those changes.
+Alternate Flow: If the user chooses not to share their changes, they keep the branch with the changes locally, and it is not pushed to the forked repository.
+
+   - The user pushes the new branch, including the committed changes, to their forked repository on GitHub.
+
+7. **Create a Pull Request (PR)**:
+   - Decision Point: The user wants to submit their changes to the original repository for review and potential inclusion in the main codebase.
+     Decision Point: If the user decides not to create a pull request, they can still keep their changes in the forked repository. However, the changes won't be 
+     reviewed by the maintainers or merged into the original repository.
+Alternate Flow: If the user chooses not to create a pull request, they keep the changes in the forked repository, and the changes are not reviewed by the maintainers.
+
+   - The user goes to the original repository's page on GitHub and clicks on the "New Pull Request" button.
+
+8. **Select Base and Compare Branches**:
+   - The user selects the base branch (usually 'master' or 'main') in the original repository to which their changes will be merged.
+   - The user selects the compare branch (the branch they created earlier) containing their changes.
+
+9. **Review Changes**:
+   - Decision Point: The maintainers of the original repository review the changes made in the pull request.
+     Decision Point: The maintainers and reviewers have the option to approve the changes, request modifications, or reject the pull request. 
+     If the changes are rejected, the pull request won't be merged into the main codebase.
+
+Alternate Flow: If the maintainers do not review the changes or do not approve the pull request, the changes are not merged into the base branch.
+
+   - The maintainers review the code, the changes made, and the purpose of the pull request.
+
+10. **Discuss and Modify (Optional)**:
+    - Decision Point: The maintainers and contributors may engage in discussions about the changes, requesting modifications or improvements.
+      Decision Point: During the pull request review process, discussions may arise, and the user may need to modify their code based on feedback. 
+      If they choose not to address the feedback or neglect the discussions, the pull request may not be accepted.
+
+Alternate Flow: If no discussions or modifications take place, the pull request remains unchanged, and the changes are not further refined.
+
+    - The maintainers and contributors discuss the code, suggest improvements, and make necessary changes to the pull request.
+
+11. **Merge the Pull Request**:
+    - Decision Point: The maintainers approve the changes and decide to merge the pull request into the main codebase.
+      Decision Point: The maintainers can choose to merge the pull request into the main codebase or keep it separate. 
+      If the changes are not deemed suitable for the project, the maintainers may opt not to merge the pull request.
+
+Alternate Flow: If the maintainers decide not to merge the pull request, the changes are not incorporated into the base branch.
+
+    - The maintainers merge the changes from the pull request into the base branch of the original repository.
+
+12. **Delete the Branch**:
+    - Decision Point: After the pull request is merged, the user may decide to delete the branch used for the pull request.
+      Decision Point: After the pull request is merged, the user can choose to delete the branch used for the pull request. 
+      If they don't delete the branch, it will remain in the forked repository.
+
+Alternate Flow: If the user chooses not to delete the branch, the branch continues to exist in the forked repository.
+
+    - The user may delete the branch to keep the repository tidy, especially if the changes have been successfully merged.
+
+This completes the detailed steps for the Pull Request feature on GitHub. Remember that GitHub is continually evolving, and some details or user interface elements might change over time. However, this outline should provide a good foundation for creating a flowchart of the Pull Request process on GitHub.

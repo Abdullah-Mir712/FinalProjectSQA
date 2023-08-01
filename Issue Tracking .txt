@@ -1,0 +1,71 @@
+Create an Issue:
+
+Decision Point (User): The user decides to report a bug, suggest an improvement, or request a new feature for the project.
+The user creates a new issue by clicking on the "New Issue" button on the repository's Issues tab.
+Issue Title and Description:
+
+Decision Point (User): The user provides a title and a detailed description of the issue.
+The user fills in the title and description fields to provide clear information about the problem or suggestion.
+
+Assignees and Labels:
+
+Decision Point (User): The user decides to assign the issue to specific project members and add labels to categorize it.
+The user can select assignees from the project contributors and add labels that represent the issue's type, priority, or other attributes.
+Submit the Issue:
+
+Decision Point (User): The user decides to submit the issue for review by the project maintainers and contributors.
+The user clicks on the "Submit new issue" button to create the issue in the repository.
+Issue Created Notification:
+
+Decision Point (System): The system notifies the repository maintainers and contributors about the newly created issue.
+The GitHub system sends notifications or emails to relevant project members, informing them of the new issue.
+Issue Review and Triage:
+
+Decision Point (Maintainer/Contributor): The maintainers and contributors review the issue details and decide its validity and priority.
+Alternate Flow: If the issue is deemed invalid or a duplicate, the maintainers or contributors may close it without further action.
+
+Issue Assignment:
+
+Decision Point (Maintainer/Contributor): The maintainers or contributors decide to assign the issue to a specific person for resolution.
+Alternate Flow: If the issue remains unassigned, it may be left open for anyone to contribute or work on.
+Work on the Issue:
+
+Decision Point (Contributor): A contributor or assigned person starts working on the issue, attempting to resolve it or implement the suggested feature.
+Alternate Flow: If no contributor decides to work on the issue, it may remain open or unaddressed.
+Create a Pull Request (Optional):
+
+Decision Point (Contributor): If the issue requires code changes, the contributor may create a pull request linked to the issue.
+Alternate Flow: If the contributor chooses not to create a pull request, other ways to resolve the issue may be pursued (e.g., providing additional information, documentation, or closing the issue).
+Issue Progress Updates:
+
+Decision Point (Maintainer/Contributor): Contributors or maintainers provide updates on the issue's progress and any discussions.
+The GitHub system logs comments and activities on the issue, allowing others to stay informed about its resolution.
+Issue Resolution:
+
+Decision Point (Maintainer): The maintainers or contributors decide that the issue has been resolved.
+Alternate Flow: If the issue is not resolved, it remains open and may require further discussions or contributions.
+Close the Issue:
+
+Decision Point (Maintainer): A maintainer or contributor decides to close the issue after it's resolved or determined to be invalid.
+The issue is closed, indicating that it has been addressed, and no further action is needed.
+
+
+
+
+
+
+
+
+
+itHub Account: The user must have a GitHub account to create an issue. If the user doesn't have an account, they need to sign up for a GitHub account first.
+
+Repository Access: To create an issue, the user must have access to the repository where they want to report the issue. Access can be in the form of read-only access (for public repositories) or read-write access (for public or private repositories).
+
+Issue Creation Permissions: Users must have the necessary permissions to create issues in the repository. For public repositories, users with read access can create issues. For private repositories, the repository owners or collaborators can create issues.
+
+Issue Tracker Enabled: The repository must have the issue tracking feature enabled. By default, GitHub enables the issue tracking feature for all repositories. However, repository owners can choose to disable it.
+
+User Understanding of the Issue: Users should have a clear understanding of the issue they want to report. This includes a concise title that reflects the problem or suggestion and a detailed description that provides relevant information for the maintainers and contributors to understand the issue.
+
+Optional: Familiarity with Labels and Assignees: While not strictly a precondition, it is helpful for users to be familiar with labels and assignees. Labels help categorize issues, and assignees can be used to indicate which contributor is responsible for working on the issue. Users can choose to add 
+labels and assignees during issue creation or leave them to be set later by maintainers or contributors.

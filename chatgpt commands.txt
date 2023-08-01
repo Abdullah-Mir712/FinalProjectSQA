@@ -1,0 +1,12 @@
+
+
+
+give me detailed steps of Security Scanning feature of github software, hence i can make its flowchart easily, 
+remember to mention decission points or alternate flows according to system, also elaborate each step 
+
+give me same description again but add alternate flow in every case if user decides not to do it 
+
+you have given me decision points of users, I want decision point or alternate flows that system offers
+
+
+
