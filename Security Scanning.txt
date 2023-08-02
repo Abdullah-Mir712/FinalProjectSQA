@@ -88,3 +88,25 @@ how it works, and how to interpret and respond to security findings.
 By following this sequence of preconditions, you can successfully set up and utilize the Security Scanning feature on GitHub to identify and address security
  vulnerabilities in your software projects. It is crucial to understand the specific requirements 
 and tools available for your chosen programming languages and development stack to maximize the benefits of security scanning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------variables
+
+Throughout this process, the main variables the user will interact with are:
+
+Notifications: The user (maintainers and contributors) interacts with notifications received from the GitHub system to become aware of security findings.
+Remediation Plan: Maintainers and contributors interact with the GitHub web interface to discuss and plan the necessary remediation steps.
+Pull Requests: Maintainers and contributors interact with pull requests to propose and merge code changes for resolving the security issues.
+Issue Comments: The user interacts with issue comments to discuss and update the status of security issues.
+Issue Status: The user interacts with the GitHub web interface to close security-related issues once they have been resolved.

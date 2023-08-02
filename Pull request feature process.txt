@@ -85,4 +85,117 @@ Alternate Flow: If the user chooses not to delete the branch, the branch continu
 
     - The user may delete the branch to keep the repository tidy, especially if the changes have been successfully merged.
 
-This completes the detailed steps for the Pull Request feature on GitHub. Remember that GitHub is continually evolving, and some details or user interface elements might change over time. However, this outline should provide a good foundation for creating a flowchart of the Pull Request process on GitHub.
+This completes the detailed steps for the Pull Request feature on GitHub. Remember that GitHub is continually evolving, and some details or user interface elements might change over time. However, this outline should provide 
+a good foundation for creating a flowchart of the Pull Request process on GitHub.
+
+-----------------------------------------------------------------------variables
+
+During the process of contributing to a project on GitHub and creating a pull request, the user will interact with certain variables and inputs. Here's a step-by-step explanation of the user interactions with the variables:
+
+1. **Create a Fork**:
+   - User Interaction: The user decides to contribute to a project hosted on GitHub and needs to make changes to the project's code. The user interacts with the GitHub web interface to create a fork of the original repository, which results in a copy of the project hosted on the user's GitHub account.
+
+2. **Clone the Fork Locally**:
+   - User Interaction: The user decides to work on the code locally and needs to have a local copy of the repository. The user interacts with Git and the command-line interface to clone the forked repository from their GitHub account to their local machine.
+
+3. **Create a New Branch**:
+   - User Interaction: The user decides to work on a specific feature, bug fix, or improvement and wants to keep it separate from the main codebase. The user interacts with Git to create a new branch in their local repository, isolating the changes from the main branch (usually named 'master' or 'main').
+
+4. **Make Changes**:
+   - User Interaction: The user makes the desired code changes in the new branch. They interact with their preferred code editor or development environment to modify the source code.
+
+5. **Commit Changes**:
+   - User Interaction: The user decides to commit the changes they made in the branch to save their progress. The user interacts with Git to create a commit with a meaningful message describing the changes.
+
+6. **Push the Branch**:
+   - User Interaction: The user wants to share their changes with others and make a pull request. The user interacts with Git to push the new branch, including the committed changes, to their forked repository on GitHub.
+
+7. **Create a Pull Request (PR)**:
+   - User Interaction: The user wants to submit their changes to the original repository for review and potential inclusion in the main codebase. The user goes to the original repository's page on GitHub and clicks on the "New Pull Request" button.
+
+8. **Select Base and Compare Branches**:
+   - User Interaction: The user selects the base branch (usually 'master' or 'main') in the original repository to which their changes will be merged. The user also selects the compare branch (the branch they created earlier) containing their changes.
+
+9. **Review Changes**:
+   - User Interaction: The maintainers of the original repository review the changes made in the pull request. The maintainers and reviewers interact with the GitHub web interface to review the code, the changes made, and the purpose of the pull request.
+
+10. **Discuss and Modify (Optional)**:
+    - User Interaction: The maintainers and contributors may engage in discussions about the changes, requesting modifications or improvements. The user interacts with the GitHub interface to respond to discussions, address feedback, and make necessary changes to the pull request.
+
+11. **Merge the Pull Request**:
+    - User Interaction: The maintainers approve the changes and decide to merge the pull request into the main codebase. The user does not have direct interaction in this step, as the maintainers perform the merge action on the GitHub interface.
+
+12. **Delete the Branch**:
+    - User Interaction: After the pull request is merged, the user may decide to delete the branch used for the pull request. The user interacts with Git to delete the local branch, and they may also interact with the GitHub interface to delete the branch from their forked repository on GitHub.
+
+Throughout this process, the main variables the user will interact with are:
+
+- GitHub Repository URL: The user interacts with the GitHub web interface to access the original repository and create a fork.
+- Branch Name: The user interacts with Git to create a new branch and commit changes to it.
+- Commit Message: The user provides a meaningful commit message while making changes and committing them.
+- Pull Request Title and Description: The user provides a title and description while creating the pull request to describe the purpose of their changes.
+- Pull Request Discussions: The user engages in discussions with maintainers and reviewers regarding the changes proposed in the pull request.
+- Merge Decision: The maintainers review the pull request and decide whether to merge it into the main codebase.
+
+Please note that some interactions involve direct use of the GitHub web interface, while others involve using Git commands on the local machine.
+
+--------------------------------------------------------------------------classes and bv
+
+
+1. `repository_owner`:
+   - Valid Dataset: A valid dataset for this variable would include the username or organization name of the owner of the original repository that the user wants to contribute to. For example, "john-doe" or "acme-organization".
+   - Invalid Dataset: An invalid dataset would be one that contains invalid characters, spaces, or special symbols in the username or organization name. For example, "john doe" or "acme@organization".
+
+     Valid Dataset: "john-doe", "acme-organization", "user123"
+Invalid Dataset: "john doe", "acme@organization", "user#123"
+
+2. `forked_repository`:
+   - Valid Dataset: A valid dataset for this variable would include the name of the repository created by the user when they fork the original repository. For example, "user-forked-repo".
+   - Invalid Dataset: An invalid dataset would be one that contains invalid characters, spaces, or special symbols in the repository name. For example, "user forked repo" or "user@forked-repo".
+
+    Valid Dataset: "user-forked-repo", "my-project-fork", "contributor-repo"
+Invalid Dataset: "user forked repo", "my project fork", "contributor@repo"
+
+3. `branch_name`:
+   - Valid Dataset: A valid dataset for this variable would include a valid branch name chosen by the user to work on the changes. For example, "feature-branch" or "bugfix-branch".
+   - Invalid Dataset: An invalid dataset would be one that contains invalid characters, spaces, or special symbols in the branch name. For example, "feature branch" or "bugfix@branch".
+    
+     Valid Dataset: "feature-branch", "bugfix-branch", "issue-42-fix"
+Invalid Dataset: "feature branch", "bugfix@branch", "issue#42-fix"
+
+4. `base_branch`:
+   - Valid Dataset: A valid dataset for this variable would include the name of the base branch in the original repository to which the user's changes will be merged. For example, "main" or "master".
+   - Invalid Dataset: An invalid dataset would be one that contains invalid characters, spaces, or special symbols in the branch name. For example, "main branch" or "master@branch".
+
+     Valid Dataset: "main", "master", "development"
+Invalid Dataset: "main branch", "master@branch", "development#1"
+
+5. `maintainers`:
+   - Valid Dataset: A valid dataset for this variable would include the usernames or names of the maintainers or reviewers of the original repository. For example, "reviewer1" or "maintainer@example.com".
+   - Invalid Dataset: An invalid dataset would be one that contains invalid characters, spaces, or special symbols in the maintainer's username or name. For example, "reviewer 1" or "maintainer@example@com".
+     Valid Dataset: "reviewer1", "maintainer@example.com", "team_lead"
+Invalid Dataset: "reviewer 1", "maintainer@example@com", "team&lead"
+
+6. `feedback_discussions`:
+   - Valid Dataset: A valid dataset for this variable would include discussions and feedback exchanged between the user and the maintainers during the pull request review process.
+   - Invalid Dataset: This variable does not have invalid datasets, as it can include various forms of discussions and feedback relevant to the pull request.
+
+     Valid Dataset: "The proposed changes look good. Let's merge them.", "Consider adding more tests for edge cases."
+Invalid Dataset: None (This variable does not have invalid datasets, as it can include various forms of discussions and feedback relevant to the pull request.)
+
+7. `pull_request_merge_decision`:
+   - Valid Dataset: A valid dataset for this variable would include the decision made by the maintainers to either merge the pull request or keep it separate.
+   - Invalid Dataset: This variable does not have invalid datasets, as it represents a binary decision (merge or not merge) made by the maintainers.
+
+     Valid Dataset: "Merge the pull request.", "Keep the pull request separate."
+Invalid Dataset: None (This variable does not have invalid datasets, as it represents a binary decision (merge or not merge) made by the maintainers.)
+
+8. `deleted_branch`:
+   - Valid Dataset: A valid dataset for this variable would include the decision made by the user to delete the branch used for the pull request after it has been merged.
+   - Invalid Dataset: This variable does not have invalid datasets, as it represents a binary decision (delete or not delete) made by the user.
+
+     Valid Dataset: "Yes", "Y", "True", "Delete the branch."
+Invalid Dataset: "No", "N", "False", "Keep the branch.", "Don't delete."
+
+It's important to note that the validity of the datasets for some variables may be subject to specific rules or constraints defined by the GitHub platform or version control system being used.
+\ The examples provided above are general guidelines, and the actual rules may vary depending on the specific implementation and settings.

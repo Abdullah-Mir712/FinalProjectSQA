@@ -69,3 +69,20 @@ User Understanding of the Issue: Users should have a clear understanding of the 
 
 Optional: Familiarity with Labels and Assignees: While not strictly a precondition, it is helpful for users to be familiar with labels and assignees. Labels help categorize issues, and assignees can be used to indicate which contributor is responsible for working on the issue. Users can choose to add 
 labels and assignees during issue creation or leave them to be set later by maintainers or contributors.
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------variables 
+
+
+Throughout this process, the main variables the user will interact with are:
+
+Issue Title: The user provides a concise title for the issue.
+Issue Description: The user provides a detailed description of the issue, including steps to reproduce a bug or detailed explanations of feature requests.
+Assignees: The user selects assignees from the project contributors who will be responsible for addressing the issue.
+Labels: The user adds labels to categorize the issue (e.g., bug, enhancement, feature request, etc.).
+Pull Request (if applicable): The contributor interacts with Git and the GitHub web interface to create a pull request linked to the issue for code changes.
+Comments and Discussions: The contributors and maintainers interact through comments to provide updates, discuss solutions, and clarify requirements for resolving the issue.
